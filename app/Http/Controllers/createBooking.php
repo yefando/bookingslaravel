@@ -6,14 +6,8 @@ use App\Models\Bookings;
 
 use Illuminate\Http\Request;
 
-class BookingsController extends Controller
+class createBooking extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
         // get bookings
@@ -30,7 +24,7 @@ class BookingsController extends Controller
     // panggil view create
     public function create()
     {
-        return view('bookings.create');
+        return view('bookings.usercreate');
     }
 
     public function store(Request $request)
