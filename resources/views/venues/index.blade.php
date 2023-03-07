@@ -9,7 +9,7 @@
         <tr>
           <th scope="col">Nama Venue</th>
           <th scope="col">Harga Venue</th>
-          <th scope="col">Action</th>
+          <th scope="col">Aksi</th>
         </tr>
       </thead>
       <tbody>
@@ -28,7 +28,7 @@
         </tr>
         @empty
         <div class="alert alert-danger">
-          Data venue belum Tersedia.
+          Data venue tidak tersedia dalam database
         </div>
         @endforelse
       </tbody>

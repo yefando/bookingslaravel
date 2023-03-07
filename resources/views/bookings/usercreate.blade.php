@@ -1,6 +1,4 @@
-@extends('mainlayout')
-@section('content')
-@section('title') {{'Bookings'}} @endsection
+
 <div class="col-xl-6 col-lg-6 col-sm-6 layout-spacing">
     <div class="widget-content widget-content-area br-6">
         <form action="{{ route('bookings.store') }}" method="POST">
@@ -96,4 +94,3 @@
             <button type="reset" class="btn btn-md btn-warning">RESET</button>
 
         </form>
-        @endsection

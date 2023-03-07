@@ -25,7 +25,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	 * Home Routes
 	 */
 	Route::get('/', 'BookingsController@index')->name('bookings.index');
-	Route::get('/bookings/create', 'BookingsController@index')->name('bookings.create');
+	Route::get('/bookings/create', 'BookingsController@create')->name('bookings.create');
 
 	Route::group(['middleware' => ['guest']], function () {
 		/**

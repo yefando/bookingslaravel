@@ -50,7 +50,7 @@ class createBooking extends Controller
             'end' => $request->end,
             'tujuan' => $request->tujuan
         ]);
-        return redirect()->route('bookings.index')->with(['success' => 'data berhasil di input']);
+        return redirect()->route('landing.index')->with(['success' => 'data berhasil di input']);
     }
 
     // edit
